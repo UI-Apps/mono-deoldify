@@ -21,6 +21,6 @@ src=($(echo src/*.cs))
 
 resources=($(echo src/resources/*.@(jpg|png|hmodel) | tr ' ' '\n' | sed -E 's/^/\/resource:/'))
 
-csc "${common[@]}" "${resources[@]}" "${src[@]}"
+mcs "${common[@]}" "${resources[@]}" "${src[@]}"
 
 read -rn 1
