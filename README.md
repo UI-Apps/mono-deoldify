@@ -6,7 +6,7 @@ Tool to colorize images. (Prettified copy of [this](https://github.com/ColorfulS
 
 ## Requirenments
 
-- .NET Framework 4.5 or higher
+- latest Mono version
 - at least 3 GB of free RAM
 - Cygwin/WSL on Windows
 
