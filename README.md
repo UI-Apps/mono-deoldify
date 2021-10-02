@@ -8,6 +8,7 @@ Tool to colorize images. (Prettified copy of [this](https://github.com/ColorfulS
 
 - .NET Framework 4.5 or higher
 - at least 3 GB of free RAM
+- Cygwin/WSL on Windows
 
 ![GUI](https://github.com/UI-Apps/mono-deoldify/blob/main/examples/ui.jpg)
 
