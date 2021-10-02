@@ -1,22 +1,22 @@
 # DeOldify.NET
-*C# implementation of Jason Antic's DeOldify(https://github.com/jantic/DeOldify)*
 
-# How to run
-* Make sure that .NET Framework 4.5 or higher is installed on your computer.
-* You can use any bit depth(x32 or x64), but on a 32-bit system you will not be able to process large images due to the limited amount of memory.
-* At least 3 GB of free RAM is required to run.
-* Download and unpack the repository, then download DeOldify.hmodel from the releases(https://github.com/ColorfulSoft/DeOldify.NET/releases/download/Weights/DeOldify.hmodel) and place it in Implementation\src\Resources.
-* Run Compile.bat
-* The DeOldify.NET.exe file will appear in the Implementation\Release folder. The application is ready to work!
-* **Use!**
+## Description
 
-![GUI](https://github.com/ColorfulSoft/DeOldify.NET/blob/main/Examples/Sample.jpg)
+Tool to colorize images. (Prettified copy of [this](https://github.com/ColorfulSoft/DeOldify.NET) repo.)
 
-# Examples
+## Requirenments
 
-![Example1](https://github.com/ColorfulSoft/DeOldify.NET/blob/main/Examples/Example1.jpg)
+- .NET Framework 4.5 or higher
+- at least 3 GB of free RAM
 
-![Example2](https://github.com/ColorfulSoft/DeOldify.NET/blob/main/Examples/Example2.jpg)
+![GUI](https://github.com/UI-Apps/mono-deoldify/blob/main/Examples/Sample.jpg)
 
-# Updates
-* [16.09.2021] - **Fixed a memory leak issue**
+## Examples
+
+![Example1](https://github.com/UI-Apps/mono-deoldify/blob/main/Examples/Example1.jpg)
+
+![Example2](https://github.com/UI-Apps/mono-deoldify/blob/main/Examples/Example2.jpg)
+
+## Notes
+
+.NET Core and .NET 5 or higher are not supported now.
