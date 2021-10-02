@@ -23,7 +23,7 @@ namespace ColorfulSoft.DeOldify
         {
             // this
             this.Text = "About";
-            this.Icon = Icon.FromHandle((new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("Info.png"))).GetHicon());
+            this.Icon = Icon.FromHandle((new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("info.png"))).GetHicon());
             this.BackColor = SystemColors.ControlDarkDark;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.ClientSize = new Size(540, 358);
@@ -36,7 +36,7 @@ namespace ColorfulSoft.DeOldify
             this.__Preview.Top = 10;
             this.__Preview.Left = 10;
             this.__Preview.SizeMode = PictureBoxSizeMode.Zoom;
-            this.__Preview.Image = new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("Preview.jpg"));
+            this.__Preview.Image = new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("preview.jpg"));
             this.Controls.Add(this.__Preview);
             // Text
             this.__Text = new Label();
@@ -396,7 +396,7 @@ namespace ColorfulSoft.DeOldify
         public MainForm() : base()
         {
             this.Text = "DeOldify.NET";
-            this.Icon = Icon.FromHandle((new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("Icon.png"))).GetHicon());
+            this.Icon = Icon.FromHandle((new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("icon.png"))).GetHicon());
             this.BackColor = SystemColors.ControlDarkDark;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.ClientSize = new Size(582, 363);
@@ -416,7 +416,7 @@ namespace ColorfulSoft.DeOldify
             this.__HelpForm = new HelpForm();
             // HelpButton
             this.__HelpButton = new FlatButton();
-            this.__HelpButton.Image = new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("Info.png"));
+            this.__HelpButton.Image = new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("info.png"));
             this.__HelpButton.Width = 22;
             this.__HelpButton.Height = 22;
             this.__HelpButton.Top = 1;
@@ -457,7 +457,7 @@ namespace ColorfulSoft.DeOldify
                   }
                   this.__OpenInput.Hide();
               };
-              this.__SetInputImage(new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("Input.jpg")));
+              this.__SetInputImage(new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("input.jpg")));
               this.__InputBox.Controls.Add(this.__InputImage);
               //-> OpenInput
               this.__OpenInput = new FlatButton();
@@ -511,7 +511,7 @@ namespace ColorfulSoft.DeOldify
                   }
                   this.__SaveOutput.Hide();
               };
-              this.__SetOutputImage(new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("Output.jpg")));
+              this.__SetOutputImage(new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("output.jpg")));
               this.__OutputBox.Controls.Add(this.__OutputImage);
               //-> SaveOutput
               this.__SaveOutput = new FlatButton();
@@ -581,7 +581,7 @@ namespace ColorfulSoft.DeOldify
               this.__OutputImage.Controls.Add(this.__SaveOutput);
             this.Controls.Add(this.__OutputBox);
             //
-            this.__ColorfulSoftLogo = new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("ColorfulSoft.png"));
+            this.__ColorfulSoftLogo = new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream("colorfulsoft.png"));
             //
             this.__StartButton = new StartButton();
             this.__StartButton.Top = 318;

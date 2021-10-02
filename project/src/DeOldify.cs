@@ -329,7 +329,7 @@ namespace ColorfulSoft.DeOldify
         ///</summary>
         public static void Initialize()
         {
-            var br = new BinaryReader(Assembly.GetExecutingAssembly().GetManifestResourceStream("DeOldify.hmodel"));
+            var br = new BinaryReader(Assembly.GetExecutingAssembly().GetManifestResourceStream("model.hmodel"));
             Parameters = new Dictionary<string, Tensor>();
             Parameters.Add("layers.0.0.weight", LoadTensor(br, 64, 3, 7, 7));
             Parameters.Add("layers.0.1.weight", LoadTensor(br, 64));
