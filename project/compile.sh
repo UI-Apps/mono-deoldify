@@ -10,7 +10,7 @@ mkdir "$target"
 common="/unsafe \
 /optimize \
 /platform:anycpu \
-/target:winexe \
+/target:exe \
 /out:\"release/deoldify.exe\" \
 /r:System.Drawing.dll \
 /r:System.Windows.Forms.dll"
