@@ -71,4 +71,4 @@ jobs:
         if: always()
         run: |
           sudo apt-get install gendarme
-          gendarme -- "$RELEASE_FILENAME.exe"
+          gendarme -- "$RELEASE_FILENAME"
