@@ -10,7 +10,7 @@ on:
 
 env:
   PROJECT_PATH: 'project'
-  RELEASE_PATH: '${{ env.PROJECT_PATH }}/release'
+  RELEASE_PATH: 'project/release'
   RELEASE_FILENAME: 'deoldify.exe'
 
 jobs:
