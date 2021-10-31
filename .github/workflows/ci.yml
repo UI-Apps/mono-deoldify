@@ -15,7 +15,11 @@ env:
 
 jobs:
   build-project:
+    strategy:
+      matrix:
+        os: [ 'ubuntu-20.04', 'macos-10.15', 'windows-2019' ]
     runs-on: ubuntu-latest
+
 
     steps:
       - uses: actions/checkout@v2
@@ -26,6 +30,7 @@ jobs:
           bash compile.sh
         
       - name: upload artifacts
+        if: matrix.os == 'ubuntu-20.04'
         uses: actions/upload-artifact@v2
         with:
           name: program
