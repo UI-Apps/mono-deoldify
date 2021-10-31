@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: program
-          path: '${{ env.RELEASE_PATH }}/${{ env.RELEASE_PATH }}'
+          path: '${{ env.RELEASE_PATH }}/${{ env.RELEASE_FILENAME }}'
           retention-days: 1
   
   lint-markdown-code:
