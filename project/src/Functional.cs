@@ -318,7 +318,6 @@ namespace ColorfulSoft.DeOldify
 
         public static Tensor PixelShuffle(Tensor x)
         {
-            var x_depth = x.Shape[0];
             var x_height = x.Shape[1];
             var x_width = x.Shape[2];
             var y = new Tensor(x.Shape[0] / 4, x.Shape[1] * 2, x.Shape[2] * 2);

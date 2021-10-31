@@ -1,5 +1,7 @@
 # DeOldify.NET
 
+[![CI](https://github.com/UI-Apps/mono-deoldify/actions/workflows/ci.yml/badge.svg)](https://github.com/UI-Apps/mono-deoldify/actions/workflows/ci.yml)
+
 ## Description
 
 Tool to colorize images. (Prettified copy of [this](https://github.com/ColorfulSoft/DeOldify.NET) repo.)

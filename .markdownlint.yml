@@ -1,0 +1,24 @@
+no-hard-tabs:
+  spaces_per_tab: 2
+
+line-length:
+  line_length: 200
+  heading_line_length: 40
+  code_block_line_length: 80
+
+no-duplicate-heading:
+  siblings_only: true
+
+no-trailing-punctuation:
+  punctuation: ".,;:!?"
+
+no-emphasis-as-heading:
+  punctuation: ".,;:!?"
+
+required-headings:
+  headings:
+  - "+"
+  - "## Description"
+  - "## Requirenments"
+  - "## Examples"
+  - "*"
