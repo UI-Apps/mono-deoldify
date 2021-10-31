@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# shellcheck disable=SC2207
-
 shopt -s extglob
 
 target="release"
@@ -17,10 +15,12 @@ common=(/unsafe
     /r:System.Drawing.dll
     /r:System.Windows.Forms.dll)
 
-src=($(echo src/*.cs))
+for f in src/*.cs; do
+    src+=("$f")
+done
 
-resources=($(echo src/resources/*.@(jpg|png|hmodel) | tr ' ' '\n' | sed -E 's/^/\/resource:/'))
+for r in src/resources/*.@(jpg|png|hmodel); do
+    resources+=("$(echo "$r" | sed -E 's/^/\/resource:/')")
+done
 
 mcs "${common[@]}" "${resources[@]}" "${src[@]}"
-
-read -rn 1
